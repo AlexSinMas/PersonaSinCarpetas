@@ -26,5 +26,6 @@ namespace PersonasUCCommand.view
             InitializeComponent();
             this.DataContext = new AgregaPersonaVM();
         }
+
     }
 }

@@ -32,6 +32,7 @@
             <StackPanel
                         Orientation="Horizontal">
                 <ComboBox
+                    ItemsSource="{Binding Path=Nacionalidades}"
                             Width="200"/>
                 <Button
                     Command="{Binding Path= UserControlNacionalidadCommand}"

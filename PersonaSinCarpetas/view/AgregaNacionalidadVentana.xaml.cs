@@ -26,5 +26,12 @@ namespace PersonasUCCommand.view
             InitializeComponent();
             this.DataContext = vm;
         }
+
+        private void AgregaNacionalidad_Click(object sender, RoutedEventArgs e)
+        {
+            vm.Nacionalidad = textNacionalidad.Text;
+            this.DialogResult = true;
+        }
+
     }
 }

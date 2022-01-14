@@ -21,7 +21,7 @@
                 HorizontalAlignment="Right"
             Orientation="Horizontal">
                 <Button
-                    Click="IntroduceNacionalidad_Click"
+                    Click="AgregaNacionalidad_Click"
                     IsDefault="True"
                     Content="Aceptar"
                     Width="80"
