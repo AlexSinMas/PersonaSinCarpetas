@@ -22,5 +22,7 @@ namespace PersonasUCCommand.service
         }
 
         internal UserControl MuestraNuevaPersonaUC() => new AgregaPersona();
+
+        internal UserControl MuestraListaPersonasUC() => new ListaPersonasUC();
     }
 }

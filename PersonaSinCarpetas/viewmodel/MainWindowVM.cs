@@ -13,7 +13,7 @@ namespace PersonasUCCommand.viewmodel
 {
     class MainWindowVM : ObservableObject
     {
-        private UserControl agregapersona;
+        //private UserControl agregapersona;
         private UserControl uc;
         public UserControl UsControl
         {
@@ -22,17 +22,19 @@ namespace PersonasUCCommand.viewmodel
         }
 
         private Navegacion nav;
-        public RelayCommand UserControlCommand { get; }
-        public RelayCommand UserControNacionalidadlCommand { get; }
+        public RelayCommand UCListaPersonasCommand { get; }
         public RelayCommand UCNuevaPersonaCommand { get; }
 
         public MainWindowVM()
         {
             this.nav = new Navegacion();
-            this.UCNuevaPersonaCommand = new RelayCommand(MuestraUC);
+            this.UCListaPersonasCommand = new RelayCommand(MuestraUCListaPersonas);
+            this.UCNuevaPersonaCommand = new RelayCommand(MuestraUCNuevaPersona);
         }
 
-        private void MuestraUC() => this.uc = nav.MuestraNuevaPersonaUC();
+        private void MuestraUCListaPersonas() => this.uc = nav.MuestraListaPersonasUC();
+
+        private void MuestraUCNuevaPersona() => this.uc = nav.MuestraNuevaPersonaUC();
 
 
 

@@ -19,6 +19,7 @@
                 Height="20"
                 Width="100"/>
             <Button
+                Command="{Binding Path=UCListaPersonasCommand}"
                 Content="Lista de personas"
                 Height="20"
                 Width="100"/>
