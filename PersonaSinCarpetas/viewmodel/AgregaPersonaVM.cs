@@ -15,6 +15,7 @@ namespace PersonasUCCommand.viewmodel
         public RelayCommand UserControlNacionalidadCommand { get; }
         public AgregaPersonaVM()
         {
+            this.nav = new Navegacion();
             this.UserControlNacionalidadCommand = new RelayCommand(AbreVentanaAgregaNacionalidad);
         }
         private void AbreVentanaAgregaNacionalidad() => nav.AbreVentanaAgregaNacionalidad();

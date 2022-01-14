@@ -32,9 +32,9 @@ namespace PersonasUCCommand.viewmodel
             this.UCNuevaPersonaCommand = new RelayCommand(MuestraUCNuevaPersona);
         }
 
-        private void MuestraUCListaPersonas() => this.uc = nav.MuestraListaPersonasUC();
+        private void MuestraUCListaPersonas() => this.UsControl = nav.MuestraListaPersonasUC();
 
-        private void MuestraUCNuevaPersona() => this.uc = nav.MuestraNuevaPersonaUC();
+        private void MuestraUCNuevaPersona() => this.UsControl = nav.MuestraNuevaPersonaUC();
 
     }
 }

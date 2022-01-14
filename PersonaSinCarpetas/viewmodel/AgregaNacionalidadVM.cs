@@ -9,9 +9,16 @@ namespace PersonasUCCommand.viewmodel
 {
     class AgregaNacionalidadVM : ObservableObject
     {
+        private String nac;
+        public String Nacionalidad
+        {
+            get => nac;
+            set => SetProperty(ref nac, value);
+        }
+
         public AgregaNacionalidadVM()
         {
-
+            this.Nacionalidad = "";
         }
     }
 }

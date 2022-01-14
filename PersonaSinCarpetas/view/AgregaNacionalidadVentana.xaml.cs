@@ -20,10 +20,11 @@ namespace PersonasUCCommand.view
     /// </summary>
     public partial class AgregaNacionalidadVentana : Window
     {
+        private AgregaNacionalidadVM vm = new AgregaNacionalidadVM();
         public AgregaNacionalidadVentana()
         {
             InitializeComponent();
-            this.DataContext = new AgregaNacionalidadVM();
+            this.DataContext = vm;
         }
     }
 }
