@@ -11,14 +11,12 @@ namespace PersonasUCCommand.viewmodel
 {
     class AgregaPersonaVM : ObservableObject
     {
-        private Navegacion nav;
+        private readonly Navegacion nav;
         public RelayCommand UserControlNacionalidadCommand { get; }
         public AgregaPersonaVM()
         {
-
             this.UserControlNacionalidadCommand = new RelayCommand(AbreVentanaAgregaNacionalidad);
         }
-
         private void AbreVentanaAgregaNacionalidad() => nav.AbreVentanaAgregaNacionalidad();
     }
 }

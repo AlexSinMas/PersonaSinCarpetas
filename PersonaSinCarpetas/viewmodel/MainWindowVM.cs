@@ -36,41 +36,5 @@ namespace PersonasUCCommand.viewmodel
 
         private void MuestraUCNuevaPersona() => this.uc = nav.MuestraNuevaPersonaUC();
 
-
-
-
-        /*
-         
-             class MainWindowVM : ObservableObject
-    {
-        private ServicioNavegacion servicio;
-        public RelayCommand AbreUC1Command { get; }
-        public RelayCommand AbreUC2Command { get; }
-        public RelayCommand AbreVentanaCommand { get; }
-
-        private UserControl opcion;
-        public UserControl Opcion
-        {
-            get => opcion;
-            set => SetProperty(ref opcion, value);
-        }
-
-        public MainWindowVM()
-        {
-            opcion = new UserControl1();
-            AbreVentanaCommand = new RelayCommand(AbrirVentana);
-            AbreVentanaCommand = new RelayCommand(AbrirUC1);
-            AbreVentanaCommand = new RelayCommand(AbrirUC2);
-            servicio = new ServicioNavegacion();
-        }
-
-        private void AbrirVentana() => servicio.AbreVentanaHija();
-        private void AbrirUC1() => opcion = servicio.AbrirUC1();
-        private void AbrirUC2() => opcion = servicio.AbrirUC2();
-
-
-    }
-         
-         */
     }
 }

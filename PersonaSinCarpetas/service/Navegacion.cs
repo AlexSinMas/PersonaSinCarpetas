@@ -10,19 +10,13 @@ namespace PersonasUCCommand.service
 {
     class Navegacion
     {
-        public Navegacion()
-        {
-
-        }
-
+        public Navegacion() { }
         public void AbreVentanaAgregaNacionalidad()
         {
             AgregaNacionalidadVentana userControl = new AgregaNacionalidadVentana();
             userControl.ShowDialog();
         }
-
         internal UserControl MuestraNuevaPersonaUC() => new AgregaPersona();
-
         internal UserControl MuestraListaPersonasUC() => new ListaPersonasUC();
     }
 }
